@@ -4,38 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/style.css">
-    <title>Quiz</title>
+    <link rel="stylesheet" href="./assets/intro.css">
+    <title>Welcome</title>
 </head>
 <body>
-    <div class="quiz-container" id="quiz">
-        <div class="quiz-header">
-        <h2 id="question">Question text</h2>
-        <ul>
-            <li>
-                <input type="radio" id="a"
-                name="answer" class="answer">
-                <label id="a_text" for="a">Question</label>
-            </li>
-            <li>
-                <input type="radio" id="b"
-                name="answer" class="answer">
-                <label id="b_text" for="b">Question</label>
-            </li>
-            <li>
-                <input type="radio" id="c"
-                name="answer" class="answer">
-                <label id="c_text" for="c">Question</label>
-            </li>
-            <li>
-                <input type="radio" id="d"
-                name="answer" class="answer">
-                <label id="d_text" for="d">Question</label>
-            </li>
-        </ul>
+    <div class="start-container" id="start">
+        <div class="input-header" id="input-header">
+            <h2 class="welcome">HTML Coding Quiz!</h2>
+            <p class="breifing">Once you beguin this quiz, you will have 60 seconds to complete it. For each answer wrong 5 seconds will be deducted. Start the quiz once you've inserted your name! Good luck.</p>
+            <form>
+                
+                    <input type="text" id="nameBar" class="nameBar" placeholder="Insert Name!">
+                
+                    <input type="submit" id="nameButton" class="formsubmit">
+                
+            </form>
+            <a class="test" href ="/index.html">
+            <button id="beguin-quiz" class="beguin-quiz">Beguin Quiz</button>    
+            </a>
         </div>
-        <button id="submit">Submit Quiz</button>
     </div>
-    <script src="./assets/script.js"></script>
+    <script src=""></script>
 </body>
 </html>
