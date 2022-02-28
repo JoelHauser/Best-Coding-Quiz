@@ -103,7 +103,7 @@ submitBtn.addEventListener('click', () => {
         if(currentQuiz < quizData.length) {
             loadQuiz();
         } else{
-           quiz.innerHTML = `<h2>You answered correctly ${score}/${quizData.length} questions.</h2>`
+           quiz.innerHTML = `<h2>You answered correctly ${score}/${quizData.length} questions.</h2><a href="./end.html"><button>Submit your score</button></a>`
         }
     }
 
@@ -111,3 +111,13 @@ submitBtn.addEventListener('click', () => {
 
     
 });
+
+
+function setTimer(num) {
+    var counter = setInterval(function()  {
+        document.getElementById('countdown').innerHTML = num;
+        num-- || clearInterval(counter);
+
+    }, 1000);
+}
+setTimer(60);

@@ -65,7 +65,7 @@ button:hover {
 }
 
 
-.timer {
+p {
     display: flex;
     justify-content: right;
     margin: .5rem;
