@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/end.css">
     <title>Score Board</title>
 </head>
-<body>
-    
+<body onload="getHighScores()">
+    <div class="end-screen">
+    <div id="highScores" class="end-screen">
+        <h1 id="finalScore">High Scores</h1>
+        <ul id="highScoresList"></ul>
+        <a class="button" href="/">Restart</a>
+    </div>
+    </div>
 </body>
+<script src="./assets/end.js"></script>
 </html>

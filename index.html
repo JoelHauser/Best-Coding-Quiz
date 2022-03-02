@@ -10,13 +10,15 @@
 <body>
     <div class="start-container" id="start">
         <div class="input-header" id="input-header">
-            <h2 class="welcome">HTML Coding Quiz!</h2>
-            <p class="breifing">Once you beguin this quiz, you will have 60 seconds to complete it. For each answer wrong 5 seconds will be deducted. Start the quiz once you've inserted your name! Good luck.</p>
-            <a class="test" href ="./quiz.html">
-            <button id="beguin-quiz" class="beguin-quiz">Beguin Quiz</button>    
-            </a>
+             <h2 class="welcome">HTML Coding Quiz!</h2>
+             <p class="breifing">Once you begin this quiz, you will have 60 seconds to complete it. For each answer wrong 5 seconds will be deducted. Start the quiz once you've inserted your name! Good luck.</p>
+             <p class="breifing"><strong>Name for scoreboard</strong></p>
+             <form onsubmit="storeUser()" action="/quiz.html">
+                 <input type="text" placeholder="Username" id="username">
+                 <input type="submit" id="username-btn" class="username-btn">
+            </form>
         </div>
     </div>
-    <script src=""></script>
+    <script src="./assets/end.js"></script>
 </body>
 </html>

@@ -92,3 +92,20 @@ input {
     text-decoration: none;
 }
 
+.username-btn {
+    background-color: #63abf3;
+    display: block;
+    width: 100%;
+    padding: 2rem;
+    color: white;
+    font-family: inherit;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+    margin: .5rem;
+    
+}
+
+section {
+    
+}

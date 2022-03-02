@@ -51,6 +51,7 @@ const b_text = document.getElementById("b_text");
 const c_text = document.getElementById("c_text");
 const d_text = document.getElementById("d_text");
 const submitBtn = document.getElementById('submit');
+const currentUser = localStorage.getItem("currentUser");
 
 let currentQuiz = 0;
 let score = 0;
@@ -104,12 +105,10 @@ submitBtn.addEventListener('click', () => {
             loadQuiz();
         } else{
            quiz.innerHTML = `<h2>You answered correctly ${score}/${quizData.length} questions.</h2><a href="./end.html"><button>Submit your score</button></a>`
+           localStorage.setItem(currentUser, score);
         }
     }
 
-
-
-    
 });
 
 
@@ -121,3 +120,4 @@ function setTimer(num) {
     }, 1000);
 }
 setTimer(60);
+
