@@ -116,7 +116,6 @@ function setTimer(num) {
     var counter = setInterval(function()  {
         document.getElementById('countdown').innerHTML = num;
         num-- || clearInterval(counter);
-
     }, 1000);
 }
 setTimer(60);
