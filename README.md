@@ -9,7 +9,7 @@ In this application you will be taking a quiz that has 6 questions! Enter your n
 
 ## Demo
 
-![How it works](https://github.com/JoelHauser/Password_Gen/blob/main/Demo/Untitled_%20Feb%2017%2C%202022%204_46%20PM.gif)
+![How it works](https://github.com/JoelHauser/Best-Coding-Quiz/blob/main/demo/Welcome.gif)
 
 
 ## Installation
