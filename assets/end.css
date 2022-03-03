@@ -38,7 +38,7 @@ h2 {
 }
 
 
-.button {
+button {
     background-color: #63abf3;
     display: block;
     width: 100%;
@@ -71,4 +71,8 @@ a:hover {
 
 .high-score:hover {
     transform: scale(1);
+}
+
+a {
+    text-decoration: none;
 }
