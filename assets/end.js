@@ -2,6 +2,7 @@ const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
 
 
 function calculateScores() {
+    localStorage.removeItem("currentUser");
     var archive = [],
     keys = Object.keys(localStorage),
     i = 0, key;
@@ -20,9 +21,8 @@ function storeUser(){
     var user = document.getElementById("username").value;
     localStorage.setItem(user, 0);
     localStorage.setItem("currentUser", user);
-
 }
-    
+
 
 function getHighScores() {
     var scoreList = calculateScores();
