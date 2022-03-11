@@ -95,20 +95,20 @@ function deselectAnswers() {
 
 submitBtn.addEventListener('click', () => {
     const answer = getSelected();
-
+    
     if(answer) {
         if(answer === quizData[currentQuiz].correct) {
             score++;
-        }
+        } 
         currentQuiz++;
         if(currentQuiz < quizData.length) {
             loadQuiz();
         } else{
-           quiz.innerHTML = `<h2>You answered correctly ${score}/${quizData.length} questions.</h2><a href="./end.html"><button>Submit your score</button></a>`
-           localStorage.setItem(currentUser, score);
+            quiz.innerHTML = `<h2>You answered correctly ${score}/${quizData.length} questions.</h2><a href="./end.html"><button>Submit your score</button></a>`
+            localStorage.setItem(currentUser, score);
         }
     }
-
+    
 });
 
 
@@ -119,4 +119,3 @@ function setTimer(num) {
     }, 1000);
 }
 setTimer(60);
-
